@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        dt {
+            font-weight: 900;
+        }
+
+        dd::before {
+            content: '➥ ';
+        }
+
+        div {
+            padding: 15px 30px;
+        }
+    </style>
+
+    <title>Número de Kaprekar</title>
+</head>
+<body>
+    <div>
+        <h1>Número de Kaprekar</h1>
+        <p>Existem alguns números que têm uma propriedade bastante interessante, observe:</p>
+        <dl>
+            <dt>9</dt>
+            <dd>9 * 9 = 81 | 8 + 1 = 9</dd>
+            <dt>55</dt>
+            <dd>55 * 55 = 3.025 | 30 + 25 = 55</dd>
+            <dt>703</dt>
+            <dd>703 * 703 = 494.209 | 494 + 209 = 703</dd>
+            <dt>2223</dt>
+            <dd>2223 * 2223 = 4.941.729 | 494 + 1.729</dd>
+        </dl>
+        <p>Os números que têm esta propriedade são conhecidos como número de Kaprekar. Cada um dos números apresentados tiveram seus algarismos decompostos de tal forma que a soma das partes elevado ao quadrado era igual ao número original.</p>
+        <p>Faça um programa capaz de ler e identificar se um determinado número N (1<=N<=100.000.000) possui ou não esta propriedade. Considere o número na base decimal.</p>
+    </div>
+    <div>
+        <label>
+            Digite um número entre 1 e 100.000:
+            <input type="number" min="1" max="100000" />
+            <button>Verificar</button>
+            <p class="errorText"></p>
+        </label>
+    </div>
+    <p class="resultado"></p>
+</body>
+</html>
