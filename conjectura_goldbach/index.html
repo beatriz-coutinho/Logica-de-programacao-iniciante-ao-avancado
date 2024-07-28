@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+
+    <title>Conjectura de Goldbach</title>
+</head>
+<body>
+    <div>
+        <h1>Conjectura de Goldbach</h1>
+        <p>A conjectura de Goldbach (ainda não provada) diz que qualquer número par maior ou igual a 4 é a soma de dois números primos.</p>
+        <p>Faça um programa que, recebendo um número P par (2<=P<=4294967294), seja capaz de retornar dois número inteiros correspondentes aos dois números primos cuja soma seja igual ao número par P. Considere que:</p>
+        <ul>
+            <li>Os valores de saída devem ser ordenados em ordem crescente.</li>
+            <li>Existindo mais de uma combinação possível, retorna-se aquela cujo primeiro valor seja o menor.</li>
+            <li>Não existindo valores (parabéns! você foi o primeiro no mundo que provou que a conjectura é falsa!) retorne -1.</li>
+        </ul>
+    </div>
+    <div>
+        <label>
+            Digite um número par entre 4 e 4294967294:
+            <input type="number" min="4" max="4294967294" />
+            <button>Checar</button>
+            <p class="errorText"></p>
+        </label>
+    </div>
+    <div>
+        <p class="resultado"></p>
+    </div>
+</body>
+</html>
