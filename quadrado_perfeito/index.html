@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        div {
+            padding: 15px 40px;
+        }
+    </style>
+
+    <title>Quadrado perfeito</title>
+</head>
+<body>
+    <div>
+        <h1>Quadrado perfeito</h1>
+        <p>Um número inteiro positivo N é um quadrado perfeito se existe um número K tal que K*K=N.</p>
+        <p>Faça um programa que receberá uma quantidade indefinida de números inteiros positivos J (-10<=J<=10) até que J seja zero. A saída do programa deverá ser a quantidade de quadrados perfeitos informados.</p>
+    </div>
+    <div>
+        <label>Digite o 1º número:</label>
+        <input type="number" min="-10" max="10">
+        <button>Enviar</button>
+        <p class="errorText"></p>
+    </div>
+    <p class="resultado"></p>
+</body>
+</html>
