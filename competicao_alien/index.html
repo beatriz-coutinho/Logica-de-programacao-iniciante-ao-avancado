@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        div {
+            padding: 15px 40px;
+        }
+
+        .texto,
+        .resultado {
+            display: none;
+        }
+
+        .aparecer {
+            display: block;
+        }
+    </style>
+
+    <title>Competição alien</title>
+</head>
+<body>
+    <div>
+        <h1>Problema da competição alien</h1>
+        <p>Os aliens do planeta Yks fazem uma competição para ver quem consegue escreve um texto com o maior número de palavras com N (1<=N<=10) caracteres.</p>
+        <p>Faça um programa para automatizar o cálculo e contar quantas palavras com N caracteres existem no texto digitado. O programa deverá receber o número N e um texto com até 250 caracteres e deverá dar como saída a quantidade de palavras com N caracteres que o texto contém.</p>
+        <p><b>ATENÇÃO: </b>para resolver este problema você necessita saber que na escrita do povo de Yks não é utilizado espaço nem mesmo para separar palavras, ao invés disto, qualquer caractere que não seja uma letra minúscula entre a e z será considerado separador de palavras</p>
+    </div>
+    <div>
+        <label>
+            Digite o número de caracteres parâmetro:
+            <input type="number" min="1" max="10" />
+        </label>
+        <button class="enviar">Enviar</button>
+        <p class="errorText"></p>
+    </div>
+    <div class="texto">
+        <label>Digite um texto de no máximo 250 caracteres: </label>
+        <textarea maxlength="250"></textarea>
+        <button class="enviar_texto">Enviar</button>
+        <p class="errorText2"></p>
+    </div>
+    <div class="resultado">
+        <p class="resp1"></p>
+        <p class="resp2"></p>
+    </div>
+</body>
+</html>
