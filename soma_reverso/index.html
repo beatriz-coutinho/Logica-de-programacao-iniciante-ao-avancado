@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+
+    <title>Soma reverso</title>
+</head>
+<body>
+    <div>
+        <h1>Soma reservada</h1>
+        <p>Para este problema considere que a soma reservada de N + M é dada por Rev(Rev(N) + Rev(M)), sendo que Rev(X) é uma função que retorna X com os algarismos na ordem inversa. Por exemplo, Rev(5789) = 9875.</p>
+        <p>Faça um programa capaz de receber dois números inteiros positivos e informar a soma reservada dos mesmos.</p>
+    </div>
+    <div>
+        <label>
+            Primeiro número: 
+            <input class="m" type="number" min="0" />
+        </label>
+        <label>
+            Segundo número:
+            <input class="n" type="number" min="0" />
+        </label>
+        <button>Soma reservada</button>
+        <p class="errorText"></p>
+    </div>
+    <p class="resultado"></p>
+</body>
+</html>
