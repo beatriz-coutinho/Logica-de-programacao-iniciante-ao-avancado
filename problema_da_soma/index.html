@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 35px;
+        }
+
+        .div_valores {
+            display: none;
+        }
+
+        .aparecer {
+            display: block;
+        }
+
+        .calcular {
+            display: none;
+        }
+    </style>
+
+    <title>Problema da soma</title>
+</head>
+
+<body>
+    <div>
+        <h1>Problema da soma</h1>
+        <p>Faça um programa capaz de solicitar um número N (1 &lsaquo; N &lsaquo; 1000) do usuário e ler N
+            números inteiros. Após a leitura do último número deve-se informar:</p>
+        <ul>
+            <li>Na primeira linha a soma dos N números em decimal.</li>
+            <li>Na segunda linha a soma em hexadecimal dos números pares informados.</li>
+            <li>Na terceira linha a soma em octal dos números impares informados.</li>
+        </ul>
+    </div>
+    <label class="num">
+        Escolha um número inteiro entre 1 e 20:
+        <input class="n" type="number" min="1" max="20" />
+    </label>
+    <button class="escolher">Escolher</button>
+    <p class="paragrafo"></p>
+    <div class="div_valores">
+        <label class="valores">
+            Escolha o 1º número inteiro:
+            <input class="valor" type="number" />
+        </label>
+        <p class="paragrafo_dois"></p>
+        <button class="enviar">Enviar</button>
+    </div>
+    <button class="calcular">Calcular</button>
+    <div>
+        <p class="primeira_linha"></p>
+        <p class="segunda_linha"></p>
+        <p class="terceira_linha"></p>
+    </div>
+</body>
+
+</html>
