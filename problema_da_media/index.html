@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .escolher_numeros {
+            display: none;
+        }
+
+        .aparecer {
+            display: block;
+        }
+
+        .div_calcular {
+            display: none;
+        }
+    </style>
+
+    <title>Problema da média</title>
+</head>
+<body>
+    <div>
+        <h1>Problema da média</h1>
+        <p>Faça um programa capaz de solicitar um número inteiro N (1 &lsaquo; N &lsaquo; 20) do usuário e ler N números inteiros.</p>
+        <p>Ao final da leitura do último número, o programa deverá informar, com uma casa decimal, a média aritmética entre os N números que estejam contidos no intervalo fechado entre -10 e 10.</p>
+    </div>
+    <div>
+        <label>
+            Escolha um número inteiro entre 1 e 20:
+            <input class="n" type="number" min="1" max="20" />
+        </label>
+        <button class="escolher">Escolher</button>
+        <p class="escolher_texto"></p>
+    </div>
+    <div class="escolher_numeros">
+        <label class="escolher_numeros_label">
+            Escolha o 1º número inteiro entre -20 e 20:
+            <input class="valores" type="number" min="-20" max="20" />
+        </label>
+        <button class="enviar">Enviar</button>
+        <p class="numeros_texto"></p>
+    </div>
+    <div class="div_calcular">
+        <button class="calcular">Calcular</button>
+        <p class="paragrafo_um"></p>
+    </div>
+</body>
+</html>
