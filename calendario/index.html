@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 50px
+        }
+
+        th, td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        label {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .marcado {
+            background-color: orange;
+        }
+        .entre {
+            background-color: cornflowerblue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Dom</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+                <th>Sab</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="clicavel">1</td>
+                <td class="clicavel">2</td>
+                <td class="clicavel">3</td>
+            </tr>
+            <tr>
+                <td class="clicavel">4</td>
+                <td class="clicavel">5</td>
+                <td class="clicavel">6</td>
+                <td class="clicavel">7</td>
+                <td class="clicavel">8</td>
+                <td class="clicavel">9</td>
+                <td class="clicavel">10</td>
+            </tr>
+            <tr>
+                <td class="clicavel">11</td>
+                <td class="clicavel">12</td>
+                <td class="clicavel">13</td>
+                <td class="clicavel">14</td>
+                <td class="clicavel">15</td>
+                <td class="clicavel">16</td>
+                <td class="clicavel">17</td>
+            </tr>
+            <tr>
+                <td class="clicavel">18</td>
+                <td class="clicavel">19</td>
+                <td class="clicavel">20</td>
+                <td class="clicavel">21</td>
+                <td class="clicavel">22</td>
+                <td class="clicavel">23</td>
+                <td class="clicavel">24</td>
+            </tr>
+            <tr>
+                <td class="clicavel">25</td>
+                <td class="clicavel">26</td>
+                <td class="clicavel">27</td>
+                <td class="clicavel">28</td>
+                <td class="clicavel">29</td>
+                <td class="clicavel">30</td>
+                <td class="clicavel">31</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <label>
+            Escolha a data de início: 
+            <input class="inicio" type="date" />
+        </label>
+        <label>
+            Escolha a data final: 
+            <input class="final" type="date" />
+        </label>
+    </div>
+</body>
+</html>
