@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    </style>
+
+    <title>Número palíndromo</title>
+</head>
+<body>
+    <div>
+        <h1>Número palíndromo</h1>
+        <p>Faça um programa que recebendo um número inteiro positivo N em hexadecimal seja capaz de verificar se este número em decimal é lido exatamente da mesma forma seja de frente para trás ou de trás para frente.</p>
+        <p>Caso positivo o programa deverá retornar uma linha com o caractere 'Número palíndromo', caso contrário o caractere informado deverá ser o 'Número não palíndromo'.</p>
+    </div>
+    <div>
+        <label class="label">
+            Digite um número em hexadecimal:
+            <input class="input" />
+        </label>
+        <button class="verificar">Verificar</button>
+        <p class="verificar_texto"></p>
+    </div>
+    <div class="resultado">
+        <p class="resultado_p1"></p>
+        <p class="resultado_p2"></p>
+        <p class="resultado_p3"></p>
+    </div>
+</body>
+</html>
