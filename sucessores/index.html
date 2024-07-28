@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        div {
+            padding: 15px 40px;
+        }
+    </style>
+
+    <title>Problema dos sucessores</title>
+</head>
+<body>
+    <div>
+        <h1>Problema dos sucessores</h1>
+        <p>Faça um programa que solicite números inteiros I (-40<=I<=40) enquanto I for diferente de zero. Quando I for zero o programa deve imprimir todos os sucessores inteiros imediatos de cada I informado.</p>
+    </div>
+    <div>
+        <label>
+            Digite o 1º número:
+        </label>
+        <input class="i" type="number" min="-40" max="40" />
+        <button>Enviar</button>
+        <p class="errorText"></p>
+    </div>
+    <p class="resultado"></p>
+</body>
+</html>
