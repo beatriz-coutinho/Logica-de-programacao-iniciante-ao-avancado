@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            margin-bottom: 30px;
+        }
+    </style>
+
+    <title>Sequência de Fibonacci</title>
+</head>
+<body>
+    <div>
+        <h1>Sequência de Fibonacci</h1>
+        <p>A sequência de Fibonacci é construída de forma que cada termo é obtido pela soma dos dois termos anteriores. Por exemplo: 0, 1, 1, 2, 3, 5, 8, 13.</p>
+        <p>Faça um programa capaz de solicitar um número inteiro N (1<=N<=40) e informar os N primeiros elementos (um elemento por linha) da sequência de Fibonacci a partir do zero e com o segundo elemento 1.</p>
+    </div>
+    <div>
+        <label>
+            Escolha um número entre 1 e 40:
+            <input type="number" min="1" max="40" />
+        </label>
+        <button>Escolher</button>
+    </div>
+</body>
+</html>
