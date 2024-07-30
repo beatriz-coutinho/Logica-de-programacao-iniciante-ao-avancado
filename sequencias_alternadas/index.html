@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" defer></script>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 50px;
+        }
+
+        div {
+            padding: 15px 40px;
+        }
+
+        .listas {
+            display: none;
+        }
+
+        .aparecer {
+            display: block;
+        }
+    </style>
+
+    <title>Sequências alternadas</title>
+</head>
+<body>
+    <div>
+        <h1>Sequências alternadas</h1>
+        <p>Faça um programa que:</p>
+        <ol>
+            <li>Leia um número N (1 <= N <= 10)</li>
+            <li>Leia N seqüências de 5 números inteiros</li>
+            <li>Some todos os números de cada sequência e guarde-os em um array</li>
+            <li>Imprima as N somas, alternando a ordem de crescente para decrescente</li>
+        </ol>
+        <p>Assuma que o N máximo será 10.</p>
+    </div>
+    <div>
+        <label>
+            Digite um número inteiro
+            <input class="n" min="1" max="10" />
+        </label>
+        <button class="enviar_num">Enviar</button>
+        <p class="errorText"></p>
+    </div>
+    <div class="listas">
+        <label class="label">
+            Digite a 1ª sequência de números inteiros separados SOMENTE por vírgula(,)
+        </label>
+        <input type="text" class="lista" />
+        <button class="enviar_seq">Enviar</button>
+        <p class="errorText2"></p>
+    </div>
+    <p class="resultado"></p>
+</body>
+</html>
